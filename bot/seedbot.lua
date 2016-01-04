@@ -220,134 +220,85 @@ function create_config( )
     "invite",
     "all"
     },
-    sudo_users = {110626080,103649648,0,tonumber(our_id)},--Sudo users
+    sudo_users = {128556958,0,tonumber(our_id)},--Sudo users
     disabled_channels = {},
-    realm = {},--Realms Id
+    realm = {40232929},--Realms Id
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v1
-An advance Administration bot based on yagop/telegram-bot 
+    about_text = [[lionbot v5.1
 
-https://github.com/SEEDTEAM/TeleSeed
+Developer : @mehran_hpr
 
-Admins
-@iwals [Founder]
-@imandaneshi [Developer]
-@seyedan25 [Manager]
+Managers:
+@lord_hpr
+@mehran_hpr
 
-Special thanks to
-awkward_potato
-Siyanew
-topkecleon
-Vamptacus
-
-Our channels
-@teleseedch [English]
 ]],
     help_text = [[
-Commands list :
+⚜لیست دستورات⚜
+1=kick
+1=ban
+برای حذف از گروه
+کیک با ریپلی هم ممکن است
+(id)و(username)و(reply)
+انجام دهید
+2=ban
+برای حذف غیرقابل برگشت
+بن رامیتوانیدبا
+(id)و(username)و(reply)
+انجام دهید
+3=unban
+برای در اوردن از حذف غیرقابل برگشت
+این دستور را میتوانیدبا
+(id)و(username)و(reply)
+انجام دهید
+4=who
+لیست افراد گروه
+5=modlist
+لیست ادمین های گپ
+6=promote
+اضافه کردن ادمین به گپ
+7=demote
+حذف کردن ادمین به گپ
+8=kickme
+لفت دادن از گروه
+9=setphoto
+تعویض عکس گروه بعد از ارسال این دستور عکس را ارسال کنید
+10=setname 
+تعویض اسم ابتدا دستور را نوشته سپس یک فاصله گزاشته و بعد اسم جدید را تایپ کنید
+11=id
+گرفتن ایدی فقط با رپلی روی پیام شخص
+12=lock
+(name)_(member)_(bots)_(arabic)_(photo)_(flood)
+برای قفل کردن اسم و عکس و ربات و ادد و  زبان فارسی و اسپم به کار میرود
+ 13=unlock
+(name)_(member)_(bots)_(arabic)_(photo)_(flood)
+برای حذف قفل اسم و عکس و ربات و ادد و  زبان فارسی و اسپم  به کار میرود
+14=newlink
+برای تعویض لینک به کار میرود
+15=link
+برای گرفتن لینک به کار میرود
+16=linkpv
+لینک گروه را در چت خصوصی ارسال میکند
+17=setflood 5_20
+برای تنظیم تعداد پیام اسپم برای کیک کردن خودکار
+18_clean
+(member)_(modlist)_(rules)برای پاک کردن دسته جمعی:اعضا و ادمین ها و قانون
+19=res @username
+برای گرفتن ایدی از طریق یوزر نیم
+20=banlist
+اسامی افراد بن شده از گپ
+21=setting
+مشاهده تنظیمات گروه
+🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷
+توجه
+1⃣ شما میتوانید اول دستورات
+!_/_#_@_$_خالی
+بگزارید
+2⃣ادمین ها میتوانند
+کیک_بن_آن بن_تعویض لینک_گرفتن لینک_عوض کردن اسم_عوض کردن عکس_تمامی قفل ها_حذف تمامی قفل ها_گزاشتن قانون
 
-!kick [username|id]
-You can also do it by reply
-
-!ban [ username|id]
-You can also do it by reply
-
-!unban [id]
-You can also do it by reply
-
-!who
-Members list
-
-!modlist
-Moderators list
-
-!promote [username]
-Promote someone
-
-!demote [username]
-Demote someone
-
-!kickme
-Will kick user
-
-!about
-Group description
-
-!setphoto
-Set and locks group photo
-
-!setname [name]
-Set group name
-
-!rules
-Group rules
-
-!id
-return group id or user id
-
-!help
-
-!lock [member|name|bots]
-Locks [member|name|bots] 
-
-!unlock [member|name|photo|bots]
-Unlocks [member|name|photo|bots]
-
-!set rules <text>
-Set <text> as rules
-
-!set about <text>
-Set <text> as about
-
-!settings
-Returns group settings
-
-!newlink
-create/revoke your group link
-
-!link
-returns group link
-
-!owner
-returns group owner id
-
-!setowner [id]
-Will set id as owner
-
-!setflood [value]
-Set [value] as flood sensitivity
-
-!stats
-Simple message statistics
-
-!save [value] <text>
-Save <text> as [value]
-
-!get [value]
-Returns text of [value]
-
-!clean [modlist|rules|about]
-Will clear [modlist|rules|about] and set it to nil
-
-!res [username]
-returns user id
-"!res @username"
-
-!log
-will return group logs
-
-!banlist
-will return group ban list
-
-**U can use both "/" and "!" 
-
-
-*Only owner and mods can add bots in group
-
-
-*Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
-
-*Only owner can use res,setowner,promote,demote and log commands
+3⃣اونر ها میتوانند کل کار های ادمین هارا انجام دهند+ادمین کردن_حذف ادمین 
+lionteam
 
 ]]
 
